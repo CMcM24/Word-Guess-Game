@@ -1,0 +1,31 @@
+.maincol1 {
+    height: 700px;
+    background: rgb(165, 23, 212);
+    background: rgba(165, 23, 212, 0.6);
+    color: gold;
+    margin-right: 30px;
+}
+
+.maincol2 {
+    height: 700px;
+    background: rgb(165, 23, 212);
+    background: rgba(165, 23, 212, 0.6);
+    color: gold;
+    margin-left: 30px;
+}
+
+body {
+    margin: 30px;
+}
+
+.titleimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.wordpic {
+    width: 100px;
+    height;
+}
