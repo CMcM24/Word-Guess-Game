@@ -11,17 +11,29 @@
 
 <body background="./assets/images/retrofuture.jpg">
 
+
+    <!-- <iframe src="./assets/audio/250-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe> -->
+
+    <audio id="synth" autoplay loop>
+        <source src="./assets/audio/synthwave.mp3" type="audio/mp3">
+    </audio>
+
+
     <div class="container">
-            <img src="./assets/images/wordguesslogo.png" alt="Logo" class="titleimage">
-        </div>
+        <img src="./assets/images/wordguesslogo.png" alt="Logo" class="titleimage">
+    </div>
         <div class="row justify-content-center">
             <div class="col-3 maincol1" style="border:solid">
                 <h5>By Colin McMahon</h5>
-                <img class="">
+                <br>
+                <h5>Topic: Action...</h5>
+                <img src="./assets/images/cinema.jpg" class="topic-pic img-fluid">
+                <br>
+                <h5>Play for ambience...</h5>
+                <button onclick="playSynth()" class="btn btn-primary button1">Play</button>
+                <button onclick="pauseSynth()" class ="btn btn-primary button2">Pause</button>
             </div>
             <div class="col-3 maincol2" style="border:solid">
-                <div class="row" style=>
-                    <div class="column">
                         <h5>Press any key to get started!</h5>
                         <br>
                         <h5>Wins:</h5>
@@ -39,8 +51,6 @@
                         <h5>Letters already guessed:</h5>
                         <br>
                         <h5 id="guessedletters"></h5>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

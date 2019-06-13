@@ -1,5 +1,6 @@
 
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
 var movieChoices = ["terminator", "diehard", "predator", "kungfury", "alien", "bladerunner"];
 
 var guessTotal = 10;
@@ -11,8 +12,10 @@ var movieLetters = [];
 
 
 
+// ------------------------------------------------------------------------------ //
+
 function movies() {
-    chosenMovie = movieChoices[Math.floor(Math.random() * words.length)];
+    chosenMovie = movieChoices[Math.floor(Math.random() * movieChoices.length)];
 
     movieLetters = chosenMovie.split("");
     movieBlanks = movieLetters.length; 
@@ -21,7 +24,7 @@ function movies() {
         movieFilling.push("_");
     }
 
-    document.getElementById("wordblanks") = (" " + movieFilling.join(" "));
+    document.getElementById("wordblanks").innerHTML = " " + movieFilling.join(" ");
 
     console.log(chosenMovie);
     console.log(movieLetters);
@@ -30,26 +33,21 @@ function movies() {
 }
 
 
-function input(guess) {
-    var correctLetter = false; 
- 
-    for (var i = 0; i < movieBlanks; i++) {
-        if (chosenMovie[i] == guess) {
-            correctLetter = true;
-        }
-    }
 
-    if(correctLetter) {
-        for
-    }
-}
-
-function musicAndPics() {
-
-    if(chosenMovie == moviesChoices[0]){
-        
-    }
-    
-}
 
 movies();
+
+var synthwave = document.getElementById("#synth");
+
+function playSynth(){
+    synthwave.play();
+}
+
+function pauseSynth(){
+    synthwave.pause();
+}
+
+
+
+// ------------------------------------------------------------------------------ //
+

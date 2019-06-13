@@ -4,6 +4,7 @@
     background: rgba(165, 23, 212, 0.6);
     color: gold;
     margin-right: 30px;
+    text-align: center;
 }
 
 .maincol2 {
@@ -12,6 +13,7 @@
     background: rgba(165, 23, 212, 0.6);
     color: gold;
     margin-left: 30px;
+    text-align: center;
 }
 
 body {
@@ -25,7 +27,18 @@ body {
     width: 70%;
 }
 
-.wordpic {
-    width: 100px;
-    height;
+.topic-pic {
+    width: 350px;
+    height: 175px;
+    border: solid;
+    color: gold;
+}
+
+.button1 {
+    color: gold;
+    background-color: blueviolet;
+}
+.button2 {
+    color: blueviolet;
+    background-color: gold;
 }
