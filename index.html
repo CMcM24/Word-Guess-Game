@@ -7,55 +7,58 @@
 </head>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Orbitron:500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./assets/css/style.css">
 
 <body background="./assets/images/retrofuture.jpg">
-
-
-    <!-- <iframe src="./assets/audio/250-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe> -->
-
-    <audio id="synth" autoplay loop>
-        <source src="./assets/audio/synthwave.mp3" type="audio/mp3">
-    </audio>
-
 
     <div class="container">
         <img src="./assets/images/wordguesslogo.png" alt="Logo" class="titleimage">
     </div>
         <div class="row justify-content-center">
-            <div class="col-3 maincol1" style="border:solid">
+            <div class="col-3 maincol1 maintext" style="border:solid">
                 <h5>By Colin McMahon</h5>
                 <br>
-                <h5>Topic: Action...</h5>
+                <h5>Topic:</h5>
                 <img src="./assets/images/cinema.jpg" class="topic-pic img-fluid">
                 <br>
                 <h5>Play for ambience...</h5>
-                <button onclick="playSynth()" class="btn btn-primary button1">Play</button>
-                <button onclick="pauseSynth()" class ="btn btn-primary button2">Pause</button>
+                <div>
+                    
+                <audio controls autoplay class="vid img-fluid">
+                    <source src="./assets/audio/synthwave.mp3" type="audio/mp3">
+                </audio>
+
+                </div>
+                <!-- <button onclick = "playSynth()" class="btn btn-primary button1">Play</button>
+                <button onclick = "pauseSynth()" class ="btn btn-primary button2">Pause</button> -->
             </div>
-            <div class="col-3 maincol2" style="border:solid">
+            <div class="col-3 maincol2 maintext" style="border:solid">
                         <h5>Press any key to get started!</h5>
                         <br>
                         <h5>Wins:</h5>
                         <br>
-                        <h5 id="wins"></h5>
+                        <h5 id="wins" class="othertext"></h5>
                         <br>
                         <h5>Current Word:</h5>
                         <br>
-                        <h5 id="wordblanks"></h5>
+                        <h5 id="wordblanks" class="othertext"></h5>
                         <br>
                         <h5>Number of Guesses remaining:</h5>
                         <br>
-                        <h5 id="guessesremaining"></h5>
+                        <h5 id="guessesremaining" class="othertext"></h5>
                         <br>
                         <h5>Letters already guessed:</h5>
                         <br>
-                        <h5 id="guessedletters"></h5>
+                        <h5 id="guessedletters" class="othertext"></h5>
             </div>
         </div>
     </div>
 
 
-    <script src="./assets/javascript/game.js"></script>
+    <script src="./assets/javascript/game.js">
+    
+    
+    </script>
 
 </body>
